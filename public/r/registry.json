@@ -1,0 +1,101 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "taskboard",
+  "homepage": "https://example.com/taskboard",
+  "items": [
+    {
+      "name": "taskboard",
+      "type": "registry:block",
+      "title": "Taskboard",
+      "description": "Kanban enterprise: compound components, DnD em lote com rollback otimista, undo/redo, virtualização 2D, nuqs, WCAG 2.2 AA, RTL e i18n.",
+      "dependencies": [
+        "@base-ui/react",
+        "@dnd-kit/core",
+        "@tanstack/react-virtual",
+        "nuqs",
+        "lucide-react",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "src/components/taskboard/context.tsx",
+          "type": "registry:component",
+          "target": "components/taskboard/context.tsx"
+        },
+        {
+          "path": "src/components/taskboard/i18n.ts",
+          "type": "registry:component",
+          "target": "components/taskboard/i18n.ts"
+        },
+        {
+          "path": "src/components/taskboard/index.ts",
+          "type": "registry:component",
+          "target": "components/taskboard/index.ts"
+        },
+        {
+          "path": "src/components/taskboard/shortcuts.ts",
+          "type": "registry:component",
+          "target": "components/taskboard/shortcuts.ts"
+        },
+        {
+          "path": "src/components/taskboard/styles.ts",
+          "type": "registry:component",
+          "target": "components/taskboard/styles.ts"
+        },
+        {
+          "path": "src/components/taskboard/taskboard-body.tsx",
+          "type": "registry:component",
+          "target": "components/taskboard/taskboard-body.tsx"
+        },
+        {
+          "path": "src/components/taskboard/taskboard-card.tsx",
+          "type": "registry:component",
+          "target": "components/taskboard/taskboard-card.tsx"
+        },
+        {
+          "path": "src/components/taskboard/taskboard-header.tsx",
+          "type": "registry:component",
+          "target": "components/taskboard/taskboard-header.tsx"
+        },
+        {
+          "path": "src/components/taskboard/taskboard.tsx",
+          "type": "registry:component",
+          "target": "components/taskboard/taskboard.tsx"
+        },
+        {
+          "path": "src/components/taskboard/types.ts",
+          "type": "registry:component",
+          "target": "components/taskboard/types.ts"
+        },
+        {
+          "path": "src/components/taskboard/utils.ts",
+          "type": "registry:component",
+          "target": "components/taskboard/utils.ts"
+        },
+        {
+          "path": "src/components/ui/button.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/components/ui/badge.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "theme": {
+          "color-warning": "var(--warning)"
+        },
+        "light": {
+          "warning": "oklch(0.6 0.15 70)"
+        },
+        "dark": {
+          "warning": "oklch(0.8 0.15 80)"
+        }
+      },
+      "docs": "Envolva a aplicação com um NuqsAdapter. Veja o README para a API completa."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "allowImportingTsExtensions": false,
+    "rootDir": "./src",
+    "outDir": "./dist-lib/types",
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.lib.tsbuildinfo"
+  },
+  "include": ["src/components/taskboard", "src/components/ui", "src/lib"],
+  "exclude": ["**/*.test.ts", "**/*.stories.tsx"]
+}

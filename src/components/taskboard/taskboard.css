@@ -1,0 +1,14 @@
+/*
+ * Tokens adicionais do Taskboard (além dos tokens padrão do shadcn/ui).
+ * Importe após o seu CSS do Tailwind/shadcn:  @import "taskboard/theme.css";
+ * e inclua o pacote no scan do Tailwind:      @source "../node_modules/taskboard/dist-lib";
+ */
+:root {
+  --warning: oklch(0.6 0.15 70);
+}
+.dark {
+  --warning: oklch(0.8 0.15 80);
+}
+@theme inline {
+  --color-warning: var(--warning);
+}
